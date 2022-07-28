@@ -34,6 +34,8 @@ def find_classes(dir):
     classes = [d for d in os.listdir(dir) if os.path.isdir(os.path.join(dir, d))]
     classes.sort()
     class_to_idx = {classes[i]: i for i in range(len(classes))}
+    print(classes)
+    print(class_to_idx)
     return classes, class_to_idx
 
 
@@ -107,7 +109,7 @@ class ImageFolder(data.Dataset):
   def __init__(self, root, transform=None, target_transform=None,
                loader=default_loader, load_in_mem=False, 
                index_filename='imagenet_imgs.npz', **kwargs):
-    classes, class_to_idx = find_classes(root)
+    classes, class_to_idx = find_classes(root) # classes=list(ex. ['nyantaro']), class_to_idx=dict(ex. {'nyantaro': 0})
     # Load pre-computed image directory walk
     if os.path.exists(index_filename):
       print('Loading pre-saved Index file %s...' % index_filename)
