@@ -1,6 +1,6 @@
 #!/bin/bash
-python train.py \n
---dataset myDataset --parallel --shuffle  --num_workers 0 --batch_size 128 --load_in_mem \
+python train.py \
+--dataset myDataset --parallel --shuffle  --num_workers 0 --batch_size 128 \
 --num_G_accumulations 1 --num_D_accumulations 1 \
 --num_D_steps 1 --G_lr 1e-4 --D_lr 4e-4 --D_B2 0.999 --G_B2 0.999 \
 --G_attn 64 --D_attn 64 \
