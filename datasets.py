@@ -156,7 +156,6 @@ class ImageFolder(data.Dataset):
       img = self.loader(str(path))
       if self.transform is not None:
         img = self.transform(img)
-        print("transform...%s" % type(img))
     
     if self.target_transform is not None:
       target = self.target_transform(target)
