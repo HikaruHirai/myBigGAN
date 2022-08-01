@@ -1,7 +1,7 @@
 #!/bin/bash
 python train.py \
 --dataset myDataset --data_root /content/drive/MyDrive/images \
---parallel --shuffle  --num_workers 0 --batch_size 64 \
+--shuffle  --num_workers 0 --batch_size 64 \
 --num_G_accumulations 1 --num_D_accumulations 1 \
 --num_D_steps 1 --G_lr 1e-4 --D_lr 4e-4 --D_B2 0.999 --G_B2 0.999 \
 --G_attn 64 --D_attn 64 \
