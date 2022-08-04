@@ -3,7 +3,7 @@ python train.py \
 --dataset myDataset --data_root /content/drive/MyDrive/images \
 --shuffle  --num_workers 0 --batch_size 64 \
 --num_G_accumulations 1 --num_D_accumulations 1 \
---num_D_steps 1 --num_epochs 1 --G_lr 1e-4 --D_lr 4e-4 --D_B2 0.999 --G_B2 0.999 \
+--num_D_steps 1 --num_epochs 10 --G_lr 1e-4 --D_lr 4e-4 --D_B2 0.999 --G_B2 0.999 \
 --G_attn 64 --D_attn 64 \
 --G_nl inplace_relu --D_nl inplace_relu \
 --SN_eps 1e-6 --BN_eps 1e-5 --adam_eps 1e-6 \
@@ -14,5 +14,5 @@ python train.py \
 --G_eval_mode \
 --G_ch 96 --D_ch 96 \
 --ema --use_ema --ema_start 20000 \
---test_every 2000 --save_every 1000 --num_best_copies 5 --num_save_copies 2 --seed 0 \
+--test_every 200 --save_every 100 --num_best_copies 5 --num_save_copies 2 --seed 0 \
 --use_multiepoch_sampler \
