@@ -19,3 +19,4 @@ python train.py \
 --resume \
 --weights_root /content/drive/MyDrive/models/weights \
 --logs_root /content/drive/MyDrive/models/logs \
+--samples_root /content/drive/MyDrive/models/samples \

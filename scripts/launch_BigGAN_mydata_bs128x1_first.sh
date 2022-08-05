@@ -3,7 +3,7 @@ python train.py \
 --dataset myDataset --data_root /content/drive/MyDrive/images \
 --shuffle  --num_workers 0 --batch_size 64 \
 --num_G_accumulations 1 --num_D_accumulations 1 \
---num_D_steps 1 --num_epochs 30 --G_lr 1e-4 --D_lr 4e-4 --D_B2 0.999 --G_B2 0.999 \
+--num_D_steps 1 --num_epochs 10 --G_lr 1e-4 --D_lr 4e-4 --D_B2 0.999 --G_B2 0.999 \
 --G_attn 64 --D_attn 64 \
 --G_nl inplace_relu --D_nl inplace_relu \
 --SN_eps 1e-6 --BN_eps 1e-5 --adam_eps 1e-6 \
@@ -18,3 +18,4 @@ python train.py \
 --use_multiepoch_sampler \
 --weights_root /content/drive/MyDrive/models/weights \
 --logs_root /content/drive/MyDrive/models/logs \
+--samples_root /content/drive/MyDrive/models/samples \
