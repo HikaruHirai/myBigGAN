@@ -15,4 +15,4 @@ python train.py \
 --G_ch 96 --D_ch 96 \
 --ema --use_ema --ema_start 20000 \
 --test_every 200 --save_every 100 --num_best_copies 5 --num_save_copies 2 --seed 0 \
---use_multiepoch_sampler \
+--use_multiepoch_sampler --resume --weights_root /content/drive/MyDrive/models/weights \
