@@ -135,6 +135,7 @@ def run(config):
                                       'start_itr': state_dict['itr']})
   print("----------loaders----------")
   print(loaders[0])
+  print("----------loaders----------")
 
   # Prepare inception metrics: FID and IS
   get_inception_metrics = inception_utils.prepare_inception_metrics(config['dataset'], config['parallel'], config['no_fid'])
