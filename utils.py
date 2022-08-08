@@ -828,7 +828,7 @@ Author: Jan Schlüter
 Andy's adds: time elapsed in addition to ETA, makes it possible to add
 estimated time to 1k iters instead of estimated time to completion.
 """
-def progress(items, desc='', total=None, min_delay=0.1, displaytype='s1k'):
+def progress(items, desc='', total=811, min_delay=0.1, displaytype='s1k'):
   """
   Returns a generator over `items`, printing the number and percentage of
   items processed and the estimated remaining processing time before yielding
