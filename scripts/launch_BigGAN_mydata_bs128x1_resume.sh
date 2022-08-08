@@ -20,4 +20,3 @@ python train.py \
 --weights_root /content/drive/MyDrive/models/weights \
 --logs_root /content/drive/MyDrive/models/logs \
 --samples_root /content/drive/MyDrive/models/samples \
---total 811 \
