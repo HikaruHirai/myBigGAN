@@ -569,6 +569,9 @@ def get_data_loaders(dataset, data_root=None, augment=False, batch_size=64,
                      transforms.Normalize(norm_mean, norm_std)])
   train_set = which_dataset(root=data_root, transform=train_transform,
                             load_in_mem=load_in_mem, **dataset_kwargs)
+  print("train_set...")
+  print("train_set num: %d" % len(train_set))
+  print("train_set...")
 
   # Prepare loader; the loaders list is for forward compatibility with
   # using validation / test splits.
